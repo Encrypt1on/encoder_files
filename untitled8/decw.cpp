@@ -124,3 +124,9 @@ void decW::on_spinBox_valueChanged(int arg1)
 
 
 
+
+void decW::on_comboBox_activated(int index)
+{
+
+}
+

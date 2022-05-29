@@ -99,15 +99,11 @@ void encW::EncodeFile(){
     QString line1;
 
     while (!in.atEnd()){
-        qDebug() << "Файл input читаю";
         s = in.readLine();
         std::string utf8_text = s.toUtf8().constData();
         str = wordEncode(utf8_text, shift);
-        qDebug() << str;
-
         out << str << "\n";
     }
-    qDebug() << "Файл енкрипт не читаю";
 
     inputFile.close();
     encryptFile.close();
@@ -127,4 +123,10 @@ void encW::on_spinBox_valueChanged(int arg1)
 
 
 
+
+
+void encW::on_comboBox_activated(int index)
+{
+
+}
 
